@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
+      - rm -rf /codebuild/output/src676323931/src/node_modules/
       - npm install
   build:
     commands:
