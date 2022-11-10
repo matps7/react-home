@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling
-      - npm run-script build
+      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
@@ -20,3 +20,5 @@ artifacts:
     - package.json
     - appspec.yml
     - scripts/**/*
+    discard-paths: no
+    base-directory: build
