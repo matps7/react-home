@@ -20,5 +20,5 @@ artifacts:
     - package.json
     - appspec.yml
     - scripts/**/*
-    discard-paths: no
-    base-directory: build
+  discard-paths: no
+  base-directory: build
